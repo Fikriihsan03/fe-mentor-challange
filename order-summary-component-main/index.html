@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  </head>
+    <div class="layout">
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-body">
+          <h2 style="font-weight: 900; color: hsl(223, 47%, 23%)">
+            Order Summary
+          </h2>
+          <p
+            style="
+              font-weight: 500;
+              font-size: 16px;
+              color: hsl(224, 23%, 55%);
+              text-align: center;
+            "
+          >
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="card-price">
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+                gap: 10px;
+              "
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+                  <path
+                    fill="#717FA6"
+                    fill-rule="nonzero"
+                    d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
+                  />
+                </g>
+              </svg>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  font-size: 16px;
+                  gap: 5px;
+                "
+              >
+                <span style="color: hsl(223, 47%, 23%)">Annual Plan</span>
+                <span style="font-weight: 500">$59.99/year</span>
+              </div>
+            </div>
+            <a class="change-button">Change</a>
+          </div>
+          <div class="card-button colored-bg">Proceed to Payment</div>
+          <div class="card-button uncolored-bg">
+            <p style="cursor: pointer">Cancel Order</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
