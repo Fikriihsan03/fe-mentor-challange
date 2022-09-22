@@ -5,7 +5,7 @@ live : https://benevolent-piroshki-26acfa.netlify.app
 
 
 ### order-summary-component-main
-live : https://playful-klepon-308177.netlify.app/
+live : https://dainty-klepon-da9d0a.netlify.app
 
 ### product-preview-card-component-main
 live : https://guileless-meerkat-501dda.netlify.app/
