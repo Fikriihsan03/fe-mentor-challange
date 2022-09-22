@@ -17,126 +17,36 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link href="./styles.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Product preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      body {
-        margin: 0;
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-      .layout {
-        height: 100vh;
-        font-family: "Montserrat", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: hsl(30, 38%, 92%);
-      }
-      .card {
-        width: 35%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 12px;
-        height: 450px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      }
-      .card-image {
-        background-color: red;
-        background-image: url("images/image-product-desktop.jpg");
-        background-repeat: no-repeat, repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 12px 0px 0px 12px;
-        width: 50%;
-        height: 100%;
-      }
-      .card-body {
-        display: flex;
-        flex-direction: column;
-        border-radius: 0px 12px 12px 0px;
-        width: 50%;
-        height: 100%;
-      }
-      .product-price {
-        margin-bottom: 15px;
-        height: 50px;
-        display: flex;
-        gap: 15px;
-        align-items: center;
-      }
-      .card-button {
-        background-color: hsl(158, 36%, 37%);
-        color: white;
-        width: 90%;
-        height: 25px;
-        padding: 10px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        font-weight: 700;
-      }
-    </style>
   </head>
   <body>
-    <!-- Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart -->
     <div class="layout">
       <div class="card">
         <div class="card-image"></div>
         <div class="card-body">
           <div style="margin: 10px">
-            <p style="font-weight: 500; font-size: 14px">P A R F U M E</p>
-            <h1 style="font-family: 'Fraunces', serif; font-weight: 700">
-              Gabrielle Essence Eau De Parfum
-            </h1>
-            <p style="color: hsl(228, 12%, 48%); font-size: 14px">
+            <p class="paragraph thin">P E R F U M E</p>
+            <h1 class="fraunces-font bold">Gabrielle Essence Eau De Parfum</h1>
+            <p class="paragraph thin">
               A floral, solar and voluptuous interpretation composed by Olivier
               Polge, Perfumer-Creator for the House of CHANEL.
             </p>
             <div class="product-price">
-              <p
-                style="
-                  font-family: 'Fraunces', serif;
-                  color: hsl(158, 36%, 37%);
-                  font-size: 30px;
-                  font-weight: 700;
-                "
-              >
-                $149.99
-              </p>
-              <p
-                style="text-decoration: line-through; color: hsl(228, 12%, 48%)"
-              >
-                $169.99
-              </p>
+              <h1 class="fraunces-font bold dark-cyan">$149.99</h1>
+              <p class="paragraph text-line-through">$169.99</p>
             </div>
             <div class="card-button">
               <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
                   fill="#FFF"
-                /></svg
-              >Add to Cart
+                />
+              </svg>
+              Add to Cart
             </div>
           </div>
         </div>
