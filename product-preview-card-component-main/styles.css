@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.layout {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+.card {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-image {
+  background-image: url("images/image-product-desktop.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px 0px 0px 12px;
+  width: 50%;
+  height: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 12px 12px 0px;
+  width: 50%;
+  height: 100%;
+}
+.product-price {
+  margin-bottom: 15px;
+  height: 50px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.card-button {
+  cursor: pointer;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  width: 90%;
+  height: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+}
+.card-button:active {
+  background-color: hsl(212, 21%, 14%);
+}
+.paragraph {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+.thin {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+.fraunces-font {
+  font-family: "Fraunces", serif;
+}
+.text-line-through {
+  text-decoration: line-through;
+}
+.dark-cyan {
+  color: hsl(158, 36%, 37%);
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    height: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-image {
+    background-image: url("images/image-product-mobile.jpg");
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 12px 12px 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .card-button {
+    margin-bottom: 10px;
+  }
+}
