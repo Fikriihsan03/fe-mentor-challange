@@ -8,7 +8,7 @@ live : https://benevolent-piroshki-26acfa.netlify.app
 live : https://dainty-klepon-da9d0a.netlify.app
 
 ### product-preview-card-component-main
-live : https://guileless-meerkat-501dda.netlify.app/
+live : https://inquisitive-sawine-5e594f.netlify.app
 
 ### 3-column-preview-card-component-main
 live : https://imaginative-stardust-c27d8d.netlify.app
