@@ -1,0 +1,29 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.inputEmail {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+.inputEmail * {
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid hsl(0, 0%, 59%);
+}
+.inputEmail button {
+  border: 1px solid hsl(0, 0%, 59%);
+}
+@media only screen and (max-width: 768px) {
+  .inputEmail {
+    flex-direction: column;
+  }
+}
