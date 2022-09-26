@@ -17,22 +17,21 @@ body {
   background-color: hsl(30, 38%, 92%);
 }
 .card {
+  background-color: white;
   width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
-  height: 450px;
+  border-radius: 0.75rem;
+  height: 28.125rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .card-image {
-  background-image: url("images/image-product-desktop.jpg");
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 12px 0px 0px 12px;
   width: 50%;
   height: 100%;
+}
+.card-image img {
+  border-radius: 12px 0px 0px 12px;
 }
 .card-body {
   display: flex;
@@ -42,10 +41,10 @@ body {
   height: 100%;
 }
 .product-price {
-  margin-bottom: 15px;
-  height: 50px;
+  margin-bottom: 0.9375rem;
+  height: 3.125rem;
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem;
   align-items: center;
 }
 .card-button {
@@ -53,13 +52,13 @@ body {
   background-color: hsl(158, 36%, 37%);
   color: white;
   width: 90%;
-  height: 25px;
-  padding: 10px;
-  border-radius: 10px;
+  height: 1.5625rem;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   font-weight: 700;
 }
 .card-button:active {
@@ -88,13 +87,15 @@ body {
 @media only screen and (max-width: 768px) {
   .card {
     width: 80%;
-    height: 600px;
+    height: 37.5rem;
     flex-direction: column;
     align-items: flex-start;
   }
   .card-image {
-    background-image: url("images/image-product-mobile.jpg");
     width: 100%;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .card-image img {
     border-radius: 12px 12px 0px 0px;
   }
   .card-body {
@@ -105,6 +106,6 @@ body {
     height: 100%;
   }
   .card-button {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 }

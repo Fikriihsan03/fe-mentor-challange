@@ -26,7 +26,17 @@
   <body>
     <div class="layout">
       <div class="card">
-        <div class="card-image"></div>
+        <picture class="card-image">
+          <source
+            media="(max-width:650px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Gabrielle Parfum"
+            style="height: 100%; width: 100%"
+          />
+        </picture>
         <div class="card-body">
           <div style="margin: 10px">
             <p class="paragraph thin">P E R F U M E</p>
