@@ -1,0 +1,98 @@
+#mobile_err_message {
+  display: none;
+}
+#mobile_err_message p {
+  font-size: 15px;
+  margin: 0px 0px 35px 0px;
+  font-size: 15px;
+  color: hsl(354, 100%, 66%);
+}
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.announcement {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 3.125rem;
+  color: hsl(0, 0%, 59%);
+  margin-top: 1.25rem;
+}
+.illustration-image {
+  width: 56.25rem;
+  height: 31.25rem;
+  margin: 4.375rem 0px 6.25rem 0px;
+}
+.inputEmail {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 50%;
+}
+.inputEmail input {
+  width: 28.125rem;
+  padding: 0px 20px;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  border-radius: 25px;
+  border: 1px solid hsl(0, 0%, 59%);
+}
+
+.inputEmail button {
+  cursor: pointer;
+  width: 14.0625rem;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  font-size: 1.125rem;
+  padding: 0px 20px;
+  border: 1px solid hsl(0, 0%, 59%);
+  height: 3.125rem;
+  border-radius: 25px;
+  border: 1px solid hsl(0, 0%, 59%);
+}
+.inputEmail button:active {
+  background-color: hsl(223, 100%, 88%);
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+  height: 50px;
+  margin-bottom: 3.125rem;
+}
+.social * {
+  cursor: pointer;
+  color: hsl(223, 87%, 63%);
+}
+
+@media only screen and (max-width: 768px) {
+  .inputEmail {
+    flex-direction: column;
+  }
+  .illustration-image {
+    width: 80%;
+    height: 13.125rem;
+  }
+  .inputEmail {
+    width: 100%;
+  }
+  .inputEmail input {
+    width: 70%;
+  }
+  .inputEmail button {
+    width: 80%;
+  }
+  .announcement {
+    font-size: 1.875rem;
+  }
+  .illustration-image {
+    margin-bottom: 8.75rem;
+  }
+}
